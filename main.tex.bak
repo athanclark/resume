@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\title{CV}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{yfonts}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Athan} % Your first name
+\familyname{Clark} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+% \address{15208 W. Ellsworth Dr.}{Golden, Colorado 80401}
+\mobile{(970) 799 - 9167}
+\email{athan@deconfigured.com}
+\homepage{deconfigured.com}{http://deconfigured.com}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Profile}
+
+Front-end and Back-end web developer, software engineer, system administrator and computer scientist.
+Focused, tactical and result-oriented -
+highly skilled in complexity management, rapid development and formal correctness.
+Well versed multi-paradigm developer, with deep understanding of Purely Functional and Object Oriented design.
+% Research in advanced type systems, automated theorem proving, and high-performance GPU and Cluster computing.
+
+\section{Published Projects}
+
+\definecolor{lightblue}{rgb}{0.22,0.45,0.70}
+
+\cvitem{Nested Routes}{Sinatra-like library for high-performance web applications in Haskell.
+            \textcolor{lightblue}{http://hackage.haskell.org/package/nested-routes}}
+\cvitem{FrankenScript}{Augments JavaScript with strong typing and partial application. \textcolor{lightblue}{https://github.com/athanclark/frankenscript}}
+\cvitem{WebPage}{Scaffold for Html5/Css3 web applications, much like WordPress' theme system. \textcolor{lightblue}{http://hackage.haskell.org/package/webpage}}
+\cvitem{Markup}{Generalizes Html nodes by what they represent, agnostic from their machinery. \textcolor{lightblue}{http://hackage.haskell.org/package/markup}}
+\cvitem{UrlPath}{URLs are abstracted to their relative or absolute counterparts, automating the
+                 migration of an app. \textcolor{lightblue}{http://hackage.haskell.org/package/urlpath}}
+\cvitem{DAG}{Compile-time directed acyclic graphs, leveraging advanced Type-Level programming
+             to facilitate acyclic safety. \textcolor{lightblue}{http://hackage.haskell.org/package/dag}}
+\cvitem{Pred-Trie}{Predicative look-up tables. \textcolor{lightblue}{http://hackage.haskell.org/package/pred-trie}}
+
+%\pagebreak
+
+\section{Programming Languages}
+
+\cvitem{JavaScript}{Node.js, jQuery, LoDash, AngularJS, React, Backbone, Require.js, Bower, Gulp, Grunt, Jade.}
+\cvitem{CSS}{Sass, Less, Stylus, PostCSS, OOCSS, SMACSS, Foundation, Bootstrap, Semantic UI.}
+\cvitem{PHP}{Symfony, Laravel, Composer, PEAR, Smarty.}
+\cvitem{Ruby}{Ruby on Rails, Sinatra, Haml.}
+\cvitem{Haskell}{Yesod, Scotty, Snap, Nested-Routes, Lens, Pandoc, HXT.}
+
+\section{Technical Skills}
+
+\subsection{Development}
+\cvitem{Administration}{Installation \& Configuration, Kernel Compilation, Hardware Optimization \& Troubleshooting}
+\cvitem{Tools}{Make \& Autotools; Gulp, Grunt, Bower, NPM, PEAR, Composer \& Cabal; Git, Darcs, Cvs; Vim, Atom}
+\cvitem{Distributions}{Ubuntu/Debian, Red Hat/Fedora, Gentoo, NixOS, FreeBSD}
+
+\subsection{Principals}
+\cvitem{Assurance}{Unit / Automated Testing, Property Establishment, Type Systems for absolute correctness. Isolated Sandboxes, Reproducible Development - Docker, Nix.}
+\cvitem{Performance}{Profiling, Complexity and Asymptotic Analysis, Web Developer Tools.}
+\cvitem{Availability}{Browser-Bug Compensation and Evasion, Backward and Forward Compatibility, and Search Engine Optimization.}
+\cvitem{Code Clarity}{Beautiful Code, Loose Coupling, Design Patterns.}
+
+%\subsection{Active Research}
+%\cvitem{PureScript}{Purely-functional programming language that compiles to JavaScript - it is based on Haskell, with improvements.}
+%\cvitem{Cryptol}{Well-typed bit cruncher for implementing ciphers - featuring a variant of dependent type theroy.}
+%\cvitem{Agda}{A beautiful dependently-typed programming language and theorem prover, similar to Haskell.}
+%\cvitem{Coq}{A proof assistant and dependently-typed programming language. Famous for finding over 200 bugs in GCC.}
+
+%\pagebreak
+
+\section{Past Positions}
+\cvitem{American Financing\\\textbf{\footnotesize 11/14 - 1/15}}{
+Upgraded their legacy PHP and Ruby codebase to a unified Haskell web application -
+visually a mirror image of the previous (with semantic improvements to the HTML),
+while compensating for historic URLs for proper redirection for SEO concerns.
+}
+\cvitem{Peerless Network\\\textbf{\footnotesize 11/13 - 5/14}}{
+Developed command-line applications for the Network Operations Center to maximize
+the throughput of their help-desk.
+}
+\cvitem{Kifaru Outdoors\\\textbf{\footnotesize 10/13 - 11/13}}{
+Emergency web application - an iTunes clone for smartphones, but accessible from the web -
+to allow control of the song playing from the dance floor, remotely throughout the building.
+}
+
+\section{References}
+
+% Please contact me for references.
+
+\center{
+\begin{multicols}{2}
+\begin{minipage}{\columnwidth}
+\center{
+\underline{Isaac Shapira}\\
+Web Development Colleague \& Student\\
+\textbf{\mobilesymbol (720) 402 - 0211}
+}
+\end{minipage}
+\begin{minipage}{\columnwidth}
+\center{
+\vspace{5mm}
+\underline{Tom Smith}\\
+Colleague \& Peer\\
+\textbf{\mobilesymbol (605) 415 - 7837}
+}
+\end{minipage}
+\begin{minipage}{\columnwidth}
+\center{
+\underline{Robert Glover}\\
+Mathematics \& Programming Student\\
+\textbf{\mobilesymbol (720) 272 - 3378}
+}
+\end{minipage}
+\begin{minipage}{\columnwidth}
+\center{
+\vspace{5mm}
+\underline{JayR McMahon}\\
+Employer for small Web Application\\
+\textbf{\mobilesymbol (720) 447 - 2219}
+}
+\end{minipage}
+\end{multicols}
+}
+
+% %----------------------------------------------------------------------------------------
+% %	COVER LETTER
+% %----------------------------------------------------------------------------------------
+%
+% % To remove the cover letter, comment out this entire block
+%
+% \clearpage
+%
+% \recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+% \makelettertitle % Print letter title
+%
+% I have been preparing to work in the programming field for 5 years, and have found myself researching advanced fields and topics including type theory and compiler design. My adventrue has left me with more hands-on experience than I've seen from most udergraduates of computer science, and my aptitude is the product of self education. I've put myself through a practical bootcamp, where everything I learned was searched for. Although that also means that I haven't been formally trained by the standard cirriculum, I believe I am competent and skillful enough to perform above and beyond your expectations.\\
+% Not only are my qualifications satisfactory for web development, but this job would be my first professional position, technically speaking. It would be an honour to work for. An office is farily alien to me, but the mentality isn't - this is a wonderful opportunity for me to finally start my professional career. If I were to be hired, I would dedicate myself to mastering every aspect of my position and improve the the company's potential with a unique addition.\\
+% Excellence is what I strive for in life, and this position would give a kickstart to my personal and professional development. I am very cooperative and can adapt to any style of management. I am innovative, but also a team-player when necessary.\\
+% I would be humbled if you considered my application for this position. I am confident that my performance would satisfy every need, and would be overjoyed to have an opportunity to work in this fast-paced and profitable field.
+%
+% \makeletterclosing % Print letter signature
+%
+% %----------------------------------------------------------------------------------------
+
+\end{document}
